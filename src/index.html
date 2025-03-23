@@ -1,0 +1,53 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="output.css">
+</head>
+<body class="bg-slate-900 flex flex-col h-lvh items-center font-mono">
+    <div class="w-1/2 h-12 bg-slate-300 rounded-3xl p-3 flex items-center justify-end display:block mt-14" >
+        <div class="input-box w-11/12">
+            <input type="text" placeholder="Search" class="w-11/12 bg-slate-300 outline-none border-none">
+        </div>
+        <div class="rounded-full bg-slate-300 text-slate-900 h-8 w-14 flex justify-center items-center hover:bg-slate-900 hover:text-slate-300">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+    </div>
+    
+    <div class="w-1/2 h-3/4 bg-slate-800 text-white mt-10 p-8 flex items-center flex-col gap-4">
+        <img src="../images/clouds.png" alt="" class="w-72 h-auto">
+        <p class="text-5xl">Cloudy</p>
+        <p class="text-3xl">30 <sup>o</sup>C</p>
+    </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="output.css" />
+</head>
+<body>
+  <div class="app-wrap h-lvh flex flex-col justify-start p-16 items-center bg-zinc-950 text-stone-500 font-mono">
+    <header>
+      <input type="text" autocomplete="off" class="search-box w-96 p-3 text-xl rounded-lg focus:outline-none text-zinc-950 font-medium" placeholder="Search for a city..." />
+    </header>
+    <main class="flex flex-col items-center gap-4 mt-10">
+      <section class="location text-xl flex flex-col items-center gap-2">
+        <div class="city"></div>
+        <div class="date"></div>
+      </section>
+      <div class="current flex flex-col items-center gap-2">
+        <div class="temp text-9xl"><span>°c</span></div>
+        <div class="weather text-5xl"></div>
+      </div>
+    </main>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
